@@ -1,0 +1,34 @@
+.sort-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    & .item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.portfolio .button {
+    background-color: var(--bgd-scl);
+    color: var(--main-color);
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    min-width: auto;
+
+    transition: background-color var(--animation-regular),
+        color var(--animation-regular),
+        box-shadow var(--animation-regular);
+}
+
+.portfolio .button:focus,
+.portfolio .button:hover,
+.portfolio .active-btn {
+    background-color: var(--brand-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.works {
+    background-color: var(--third-color);
+    padding-bottom: 94px;
+
+    --count-cards: 3;
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.works__image {
+    display: block;
+}
+
+.works__desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--third-color);
+}

@@ -1,0 +1,27 @@
+.advantage {
+    background-color: var(--third-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantage__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.advantage-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgd-scl);
+}
+
+.advantage__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}

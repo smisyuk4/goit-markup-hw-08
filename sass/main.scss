@@ -1,0 +1,13 @@
+//main:
+// переменные
+@import './utils/module';
+
+// общие стили, сброс стилей
+@import './base/module';
+
+// контейнер, секция, кнопка, соц.сети, логотип
+@import './components/module';
+
+// шапка сайта, футер, главный екран
+@import './layout/module';
+

@@ -1,0 +1,24 @@
+.button {
+    background-color: var(--brand-color);
+    color: var(--third-color);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    transition: background-color var(--animation-regular),
+        box-shadow var(--animation-regular);
+
+    &:focus,
+    &:hover {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
