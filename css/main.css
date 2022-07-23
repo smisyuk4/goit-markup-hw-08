@@ -121,12 +121,19 @@ p {
 }
 
 .section-title {
-  text-align: center;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: var(33px/28px);
+  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: var(42px/36px);
+  }
 }
 
 .sotial {
@@ -149,15 +156,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: var(--third-color);
   -webkit-transition: background-color var(--animation-regular);
   transition: background-color var(--animation-regular);
@@ -809,10 +816,8 @@ p {
 }
 
 .team {
+  padding: 60px 0;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  --count-cards: 4;
   background-color: var(--bgd-scl);
 }
 .team__item {
@@ -821,30 +826,51 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__item:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+}
+
+.team__list {
+  --count-cards: 1;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    --count-cards: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --count-cards: 4;
+  }
 }
 
 .team__image {
   display: block;
+  width: 100%;
 }
 
 .team-desc {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0 24px 0;
 }
 .team-desc__name {
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
 }
 .team-desc__position {
   margin-bottom: 16px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+@media screen and (min-width: 1200px) {
+  .team-desc {
+    padding: 30px 0;
+  }
 }
 
 .clients {
