@@ -849,6 +849,17 @@ p {
 .team__image {
   display: block;
   width: 100%;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__image {
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__image {
+    height: 260px;
+  }
 }
 
 .team-desc {
@@ -874,42 +885,47 @@ p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  --count-cards: 2;
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    --count-cards: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    --count-cards: 6;
+  }
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
-}
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients__item .clients__link {
-  color: #AFB1B8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
   -webkit-transition: color var(--animation-regular), border-color var(--animation-regular);
   transition: color var(--animation-regular), border-color var(--animation-regular);
 }
