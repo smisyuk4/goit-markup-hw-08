@@ -1,27 +1,47 @@
 .advantage {
     background-color: var(--third-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;   
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
-.advantage__item:nth-child(4n) {
-    margin-right: 0;
+.advantage__list {   
+    --count-cards: 1;
+
+    @media screen and (min-width: 768px) {
+        --count-cards: 2;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        --count-cards: 4;
+    }
 }
 
 .advantage-pic {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 270px;
+    justify-content: center;   
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--bgd-scl);
 }
 
+.advantage__title { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc( 16px / 14px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .advantage__desc {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: calc(24px / 14px);
     letter-spacing: 0.03em;
     color: var(--second-color);
 }
