@@ -99,11 +99,15 @@
 }
 
 .footer-distribution {
+    width: 100%;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 0 auto;
+        width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: auto;      
+        width: 570px;
     }
 }
