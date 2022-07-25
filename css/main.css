@@ -421,7 +421,7 @@ p {
 .subscribe-form__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -429,7 +429,7 @@ p {
 .subscribe-form__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -437,7 +437,7 @@ p {
 .subscribe-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -445,7 +445,7 @@ p {
 .subscribe-form__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -453,7 +453,7 @@ p {
 .subscribe-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
