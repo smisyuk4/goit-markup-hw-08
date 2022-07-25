@@ -23,6 +23,10 @@
   overflow: hidden;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
@@ -574,10 +578,6 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 .modal-input-wrp {
