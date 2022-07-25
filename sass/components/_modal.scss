@@ -54,3 +54,8 @@
     visibility: hidden;
     pointer-events: none;
 }
+
+// no-scroll 
+body.no-scroll {
+    overflow: hidden;
+}
