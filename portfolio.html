@@ -22,6 +22,54 @@
         <div class="container">
             <a class="logo link" href="./index.html" target="_blank" rel="noopener nofollow noreferrer">Web<span
                     class="logo-light-theme">Studio</span></a>
+            
+            <button class="mobile-menu-btn" type="button" aria-label="мобильное меню" data-menu-button>
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use class="mobile-menu-burger" href="./images/icons/icons.svg#icon-menu-burger"></use>
+                    <use class="mobile-menu-close" href="./images/icons/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            
+            <!-- Мобильное меню -->
+            <div class="mobile-menu" data-menu>
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link link mobile-menu-nav-link--active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu-nav-item">
+                        <a class="mobile-menu-nav-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts-item">
+                        <a class="mobile-menu-contacts-link link mobile-menu-contacts-link--active" href="tel:+380961111111">+38 096
+                            111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contacts-item">
+                        <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            
+                <ul class="mobile-menu-sotials list">
+                    <li class="mobile-menu-sotials-item">
+                        <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-sotials-item">
+                        <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-sotials-item">
+                        <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-sotials-item">
+                        <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            
             <nav class="menu">
                 <ul class="menu__list list">
                     <li class="menu__item item">
@@ -60,7 +108,7 @@
     
     <!-- main -->
     <main>
-        <section class="portfolio">
+        <!-- <section class="portfolio">
             <div class="container">
                 <h1 hidden>Портфолио</h1>
                 
@@ -220,7 +268,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- footer + -->
@@ -294,6 +342,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
