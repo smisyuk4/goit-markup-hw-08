@@ -68,7 +68,14 @@
     }
 }
 
+.portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .card-desc {
+    flex-grow: 1;
     padding: 20px 24px;   
     background-color: var(--third-color);
     border-right: 1px solid #EEEEEE;
