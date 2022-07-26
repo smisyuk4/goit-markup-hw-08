@@ -26,8 +26,7 @@
     }
 }
 
-.team__image {
-    display: block;
+.team__image { 
     width: 100%;
     height: 460px;
     
@@ -46,14 +45,14 @@
     &__name {
         margin-bottom: 10px;
         font-weight: 500;
-        line-height: calc(19px / 16px);
+        line-height: 1.19;
         letter-spacing: 0.03em;        
     }
 
     &__position {
         margin-bottom: 16px;
         font-weight: 400;
-        line-height: calc(19px / 16px);
+        line-height: 1.19;
         letter-spacing: 0.03em;
         color: var(--second-color);
     }

@@ -31,7 +31,7 @@
 .advantage__title { 
     font-weight: 700;
     font-size: 14px;
-    line-height: calc( 16px / 14px);
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -41,7 +41,7 @@
 .advantage__desc {
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24px / 14px);
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-color);
 }
