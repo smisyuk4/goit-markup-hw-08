@@ -1155,6 +1155,114 @@ img {
   border-color: var(--brand-color);
 }
 
+.portfolio {
+  margin-top: 60px;
+  padding: 60px 0;
+  background-color: var(--third-color);
+  --count-cards: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin-top: 80px;
+    padding: 94px 0;
+    --count-cards: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    --count-cards: 3;
+  }
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 294px;
+}
+
+.portfolio-overlay {
+  padding: 77px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 294px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform var(--animation-regular);
+  transition: -webkit-transform var(--animation-regular);
+  transition: transform var(--animation-regular);
+  transition: transform var(--animation-regular), -webkit-transform var(--animation-regular);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-overlay {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-overlay {
+    padding: 63px 24px;
+  }
+}
+
+.portfolio-overlay-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+}
+
+.portfolio-img-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.portfolio-item {
+  -webkit-transition: -webkit-box-shadow var(--animation-regular);
+  transition: -webkit-box-shadow var(--animation-regular);
+  transition: box-shadow var(--animation-regular);
+  transition: box-shadow var(--animation-regular), -webkit-box-shadow var(--animation-regular);
+}
+.portfolio-item:focus, .portfolio-item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-desc {
+  padding: 20px 24px;
+  background-color: var(--third-color);
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+}
+
+.portfolio-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--main-color);
+}
+
+.portfolio-category {
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
 .footer {
   background-color: #2F303A;
   padding: 60px 0;
