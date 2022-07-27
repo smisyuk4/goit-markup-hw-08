@@ -95,10 +95,13 @@
     letter-spacing: 0.02em;
     color: var(--second-color);
 
-    &--active {        
-        font-size: 34px;
-        line-height: 1.18;      
-        color: var(--brand-color);   
+    &--active {       
+        color: var(--brand-color);
+
+        @media screen and (min-width: 480px) {
+            font-size: 34px;
+            line-height: 1.18;
+        }          
     }
 }
 
