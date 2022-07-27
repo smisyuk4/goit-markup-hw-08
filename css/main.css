@@ -195,6 +195,7 @@ img {
   height: 100%;
   z-index: 900;
   padding: 48px 40px;
+  overflow-y: auto;
   background-color: var(--third-color);
   -webkit-transition: -webkit-transform var(--animation-regular);
   transition: -webkit-transform var(--animation-regular);
@@ -548,6 +549,11 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
