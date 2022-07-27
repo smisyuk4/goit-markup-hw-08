@@ -163,7 +163,12 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="works__list list table-list">
                     <li class="works__item item table-item">
-                        <picture>                            
+                        <picture>
+                            <source 
+                                media="(min-width: 1200px)" 
+                                srcset="images/work/work-1-370.webp 1x, images/work/work-1-370@2x.webp 2x"
+                                type="image/webp" 
+                            />
                             <source
                                 media="(min-width: 1200px)"                                 
                                 srcset="images/work/work-1-370.jpg 1x, images/work/work-1-370@2x.jpg 2x" 
@@ -176,6 +181,11 @@
                     <li class="works__item item table-item">
                         <picture>
                             <source 
+                                media="(min-width: 1200px)" 
+                                srcset="images/work/work-2-370.webp 1x, images/work/work-2-370@2x.webp 2x"
+                                type="image/webp" 
+                            />
+                            <source 
                                 media="(min-width: 1200px)"
                                 srcset="images/work/work-2-370.jpg 1x, images/work/work-2-370@2x.jpg 2x" 
                                 type="image/jpg" />
@@ -185,6 +195,11 @@
                     </li>
                     <li class="works__item item table-item">
                         <picture>
+                            <source 
+                                media="(min-width: 1200px)" 
+                                srcset="images/work/work-3-370.webp 1x, images/work/work-3-370@2x.webp 2x"
+                                type="image/webp" 
+                            />
                             <source 
                                 media="(min-width: 1200px)"                                
                                 srcset="images/work/work-3-370.jpg 1x, images/work/work-3-370@2x.jpg 2x"
@@ -205,21 +220,41 @@
             <ul class="team__list list table-list ">
                 <li class="team__item item table-item">
                     <picture>
+                        <!-- desctop -->
                         <source 
-                        media="(min-width: 1200px)"
-                        srcset="images/team/team-1-270.jpg 1x, images/team/team-1-270@2x.jpg 2x" 
-                        type="image/jpg"
+                            media="(min-width: 1200px)"
+                            srcset="images/team/team-1-270.webp 1x, images/team/team-1-270@2x.webp 2x" 
+                            type="image/webp"
+                        />
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="images/team/team-1-270.jpg 1x, images/team/team-1-270@2x.jpg 2x" 
+                            type="image/jpg"
+                        />
+
+                        <!-- tablet -->
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="images/team/team-1-354.webp 1x, images/team/team-1-354@2x.webp 2x"
+                            type="image/webp" 
                         />
                         <source 
                             media="(min-width: 768px)" 
-                            srcset="images/team/team-1-324.jpg 1x, images/team/team-1-354@2x.jpg 2x"
+                            srcset="images/team/team-1-354.jpg 1x, images/team/team-1-354@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- mobile -->
+                        <source 
+                            media="(max-width: 767px)" 
+                            srcset="images/team/team-1-450.webp 1x, images/team/team-1-450@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(max-width: 767px)" 
                             srcset="images/team/team-1-450.jpg 1x, images/team/team-1-450@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
                         <img class="team__image" src="./images/img-1.jpg" alt="мужчина с бородой и очками в рубашке" width="270" height="260">
                     </picture>
 
@@ -260,21 +295,41 @@
                 </li>
                 <li class="team__item item table-item">
                     <picture>
+                        <!-- desctop -->
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/team/team-2-270.webp 1x, images/team/team-2-270@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(min-width: 1200px)" 
                             srcset="images/team/team-2-270.jpg 1x, images/team/team-2-270@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- tablet -->
                         <source 
                             media="(min-width: 768px)" 
-                            srcset="images/team/team-2-324.jpg 1x, images/team/team-2-354@2x.jpg 2x"
+                            srcset="images/team/team-2-354.webp 1x, images/team/team-2-354@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="images/team/team-2-354.jpg 1x, images/team/team-2-354@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- mobile -->
+                        <source 
+                            media="(max-width: 767px)" 
+                            srcset="images/team/team-2-450.webp 1x, images/team/team-2-450@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(max-width: 767px)" 
                             srcset="images/team/team-2-450.jpg 1x, images/team/team-2-450@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
                         <img class="team__image" src="./images/img-2.jpg" alt="женщина с белыми волосами и очками" width="270" height="260">
                     </picture>
                     
@@ -315,21 +370,41 @@
                 </li>
                 <li class="team__item item table-item">
                     <picture>
+                        <!-- desctop -->
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/team/team-3-270.webp 1x, images/team/team-3-270@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(min-width: 1200px)" 
                             srcset="images/team/team-3-270.jpg 1x, images/team/team-3-270@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- tablet -->
                         <source 
                             media="(min-width: 768px)" 
-                            srcset="images/team/team-3-324.jpg 1x, images/team/team-3-354@2x.jpg 2x"
+                            srcset="images/team/team-3-354.webp 1x, images/team/team-3-354@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="images/team/team-3-354.jpg 1x, images/team/team-3-354@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- mobile -->
+                        <source 
+                            media="(max-width: 767px)" 
+                            srcset="images/team/team-3-450.webp 1x, images/team/team-3-450@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(max-width: 767px)" 
                             srcset="images/team/team-3-450.jpg 1x, images/team/team-3-450@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
                         <img class="team__image" src="./images/img-3.jpg" alt="мужчина с бородой" width="270" height="260">
                     </picture>
                     
@@ -370,21 +445,41 @@
                 </li>
                 <li class="team__item item table-item">
                     <picture>
+                        <!-- desctop -->
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/team/team-4-270.webp 1x, images/team/team-4-270@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(min-width: 1200px)" 
                             srcset="images/team/team-4-270.jpg 1x, images/team/team-4-270@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- tablet -->
                         <source 
                             media="(min-width: 768px)" 
-                            srcset="images/team/team-4-324.jpg 1x, images/team/team-4-354@2x.jpg 2x"
+                            srcset="images/team/team-4-354.webp 1x, images/team/team-4-354@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source 
+                            media="(min-width: 768px)" 
+                            srcset="images/team/team-4-354.jpg 1x, images/team/team-4-354@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
+
+                        <!-- mobile -->
+                        <source 
+                            media="(max-width: 767px)" 
+                            srcset="images/team/team-4-450.webp 1x, images/team/team-4-450@2x.webp 2x"
+                            type="image/webp" 
+                        />
                         <source 
                             media="(max-width: 767px)" 
                             srcset="images/team/team-4-450.jpg 1x, images/team/team-4-450@2x.jpg 2x"
                             type="image/jpg" 
-                            />
+                        />
                         <img class="team__image" src="./images/img-4.jpg" alt="мужчина с бородой и очками в футболке" width="270" height="260">
                     </picture>
                     
